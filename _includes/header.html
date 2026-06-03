@@ -59,7 +59,13 @@
           <nav class="header__nav">
             {% if page.is_home %}
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <div class="nav-services-dropdown">
+              <a href="#services">Services</a>
+              <div class="nav-dropdown">
+                <a href="/services/agricultural-fencing/">Agricultural Fencing</a>
+                <a href="/services/security-commercial-fencing/">Security &amp; Commercial Fencing</a>
+              </div>
+            </div>
             <a href="#why">Why Us</a>
             <a href="#work-carousel">Our Work</a>
             <a href="#reviews-carousel">Reviews</a>
@@ -68,7 +74,13 @@
             <a href="#quote">Contact</a>
             {% else %}
             <a href="/">Home</a>
-            <a href="/#services">Services</a>
+            <div class="nav-services-dropdown">
+              <a href="/#services">Services</a>
+              <div class="nav-dropdown">
+                <a href="/services/agricultural-fencing/">Agricultural Fencing</a>
+                <a href="/services/security-commercial-fencing/">Security &amp; Commercial Fencing</a>
+              </div>
+            </div>
             <a href="/#reviews-carousel">Reviews</a>
             <a href="/#areas">Areas</a>
             <a href="#faq">FAQ</a>
@@ -85,6 +97,8 @@
         {% if page.is_home %}
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="/services/agricultural-fencing/" class="nav-mobile-service-link">Agricultural Fencing</a>
+        <a href="/services/security-commercial-fencing/" class="nav-mobile-service-link">Security &amp; Commercial</a>
         <a href="#why">Why Us</a>
         <a href="#work-carousel">Our Work</a>
         <a href="#reviews-carousel">Reviews</a>
@@ -94,6 +108,8 @@
         {% else %}
         <a href="/">Home</a>
         <a href="/#services">Services</a>
+        <a href="/services/agricultural-fencing/" class="nav-mobile-service-link">Agricultural Fencing</a>
+        <a href="/services/security-commercial-fencing/" class="nav-mobile-service-link">Security &amp; Commercial</a>
         <a href="/#reviews-carousel">Reviews</a>
         <a href="/#areas">Areas</a>
         <a href="#faq">FAQ</a>
