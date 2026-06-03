@@ -3026,7 +3026,7 @@ body.color-mode .coverage-item i {
 .nav-dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
@@ -3036,6 +3036,16 @@ body.color-mode .coverage-item i {
   min-width: 230px;
   padding: 8px 0;
   z-index: 200;
+}
+
+/* Bridge the gap so hover doesn't break when moving from trigger to dropdown */
+.nav-dropdown::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
 }
 
 .nav-services-dropdown:hover .nav-dropdown {
@@ -3055,7 +3065,6 @@ body.color-mode .coverage-item i {
 }
 
 .nav-dropdown a:hover {
-  background: rgba(231, 144, 29, 0.08);
   color: #e7901d !important;
 }
 
@@ -3077,7 +3086,6 @@ body.dark-mode .nav-dropdown a {
 }
 
 body.dark-mode .nav-dropdown a:hover {
-  background: rgba(231, 144, 29, 0.15);
   color: #e7901d !important;
 }
 
@@ -3092,6 +3100,5 @@ body.color-mode .nav-dropdown a {
 }
 
 body.color-mode .nav-dropdown a:hover {
-  background: rgba(231, 144, 29, 0.15);
   color: #e7901d !important;
 }
