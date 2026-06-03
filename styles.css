@@ -738,6 +738,10 @@ button {
   background: #040d0b99;
 }
 
+.hero__overlay--strong {
+  background: #040d0bc4;
+}
+
 .hero__content {
   position: relative;
   z-index: 1;
@@ -1260,6 +1264,19 @@ body.tall-header .header__nav-bar {
   font-size: 18px;
   color: var(--n-600);
   line-height: 1.6;
+}
+
+.service-card__learn-more {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary, #e7901d);
+  text-decoration: none;
+}
+
+.service-card__learn-more:hover {
+  text-decoration: underline;
 }
 
 /* ========================================
@@ -3005,7 +3022,7 @@ body.color-mode .coverage-item i {
 .nav-dropdown {
   display: none;
   position: absolute;
-  top: calc(100% + 10px);
+  top: 100%;
   left: 50%;
   transform: translateX(-50%);
   background: #fff;
@@ -3013,7 +3030,7 @@ body.color-mode .coverage-item i {
   border-radius: 6px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   min-width: 230px;
-  padding: 4px 0;
+  padding: 8px 0;
   z-index: 200;
 }
 
@@ -3024,7 +3041,7 @@ body.color-mode .coverage-item i {
 .nav-dropdown a {
   display: block;
   padding: 10px 16px;
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-weight: 500 !important;
   color: #3a2407 !important;
   text-transform: none !important;
